@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/usr/users/volterrakernel/lepretre_cle/volterra/config/dataloaders/soccernet.py", line 1, in <module>
-    import SoccerNet
-ModuleNotFoundError: No module named 'SoccerNet'

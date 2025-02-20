@@ -10,3 +10,8 @@
 2025-02-20 20:18:35,369 - INFO - Dataset: hmdb51, Root: ./data/HMDB51/videos, Output: ./data/HMDB51/preprocessed
 2025-02-20 20:18:35,699 - INFO - Number of test videos: 1376
 2025-02-20 20:18:35,704 - INFO - Starting epoch 1/100
+2025-02-20 20:37:24,223 - INFO - [train] Epoch: 1/100 Loss: 8.3109 Acc: 0.0609
+2025-02-20 20:37:24,224 - INFO - Execution time for train phase: 1128.52 seconds
+2025-02-20 20:39:38,280 - INFO - [val] Epoch: 1/100 Loss: 13.6251 Acc: 0.0681
+2025-02-20 20:39:38,281 - INFO - Execution time for val phase: 134.06 seconds
+2025-02-20 20:39:38,281 - INFO - Starting epoch 2/100
