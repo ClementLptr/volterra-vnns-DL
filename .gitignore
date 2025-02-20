@@ -1,0 +1,12 @@
+# Ignorer la base de données 
+/data/
+/models/
+
+# Ignorer l'environnement virtuel 
+/.venv/
+
+# Ignorer les dossiers de cache Python
+__pycache__/
+*.pyc
+*.pyo
+models/

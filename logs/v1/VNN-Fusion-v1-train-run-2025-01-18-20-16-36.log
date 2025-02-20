@@ -1,0 +1,347 @@
+2025-01-18 20:16:36,099 - INFO - Logging initialized. Log file: /usr/users/volterrakernel/lepretre_cle/volterra/logs/v1/VNN-Fusion-v1-train-run-2025-01-18-20-16-36.log
+2025-01-18 20:16:36,099 - INFO - Model version: v1
+2025-01-18 20:16:36,144 - INFO - Using device: cuda:0
+2025-01-18 20:16:38,115 - INFO - Total model parameters: 13.98M
+2025-01-18 20:16:38,416 - INFO - TensorBoard log directory: /usr/users/volterrakernel/lepretre_cle/volterra/models/Jan18_20-16-38_sh00
+2025-01-18 20:16:38,416 - INFO - Dataset: hmdb51, Root: ./data/HMDB51/videos, Output: ./data/HMDB51/preprocessed
+2025-01-18 20:16:39,143 - INFO - Number of train videos: 4289
+2025-01-18 20:16:39,149 - INFO - Dataset: hmdb51, Root: ./data/HMDB51/videos, Output: ./data/HMDB51/preprocessed
+2025-01-18 20:16:39,413 - INFO - Number of val videos: 1101
+2025-01-18 20:16:39,419 - INFO - Dataset: hmdb51, Root: ./data/HMDB51/videos, Output: ./data/HMDB51/preprocessed
+2025-01-18 20:16:39,726 - INFO - Number of test videos: 1376
+2025-01-18 20:16:39,731 - INFO - Starting epoch 1/100
+2025-01-18 20:22:50,158 - INFO - [train] Epoch: 1/100 Loss: 6.3217 Acc: 0.0914
+2025-01-18 20:22:50,159 - INFO - Execution time for train phase: 370.43 seconds
+2025-01-18 20:23:38,114 - INFO - [val] Epoch: 1/100 Loss: 5.2607 Acc: 0.1317
+2025-01-18 20:23:38,115 - INFO - Execution time for val phase: 47.96 seconds
+2025-01-18 20:23:38,120 - INFO - Starting epoch 2/100
+2025-01-18 20:29:58,673 - INFO - [train] Epoch: 2/100 Loss: 4.9747 Acc: 0.1550
+2025-01-18 20:29:58,673 - INFO - Execution time for train phase: 380.55 seconds
+2025-01-18 20:30:49,996 - INFO - [val] Epoch: 2/100 Loss: 7.2356 Acc: 0.1508
+2025-01-18 20:30:49,996 - INFO - Execution time for val phase: 51.32 seconds
+2025-01-18 20:30:49,998 - INFO - Starting epoch 3/100
+2025-01-18 20:37:09,601 - INFO - [train] Epoch: 3/100 Loss: 4.6134 Acc: 0.1753
+2025-01-18 20:37:09,601 - INFO - Execution time for train phase: 379.60 seconds
+2025-01-18 20:38:00,543 - INFO - [val] Epoch: 3/100 Loss: 5.2807 Acc: 0.1771
+2025-01-18 20:38:00,543 - INFO - Execution time for val phase: 50.94 seconds
+2025-01-18 20:38:00,545 - INFO - Starting epoch 4/100
+2025-01-18 20:44:20,321 - INFO - [train] Epoch: 4/100 Loss: 4.4630 Acc: 0.2045
+2025-01-18 20:44:20,322 - INFO - Execution time for train phase: 379.78 seconds
+2025-01-18 20:45:11,482 - INFO - [val] Epoch: 4/100 Loss: 5.4636 Acc: 0.1807
+2025-01-18 20:45:11,482 - INFO - Execution time for val phase: 51.16 seconds
+2025-01-18 20:45:11,484 - INFO - Starting epoch 5/100
+2025-01-18 20:51:30,855 - INFO - [train] Epoch: 5/100 Loss: 4.2468 Acc: 0.2292
+2025-01-18 20:51:30,855 - INFO - Execution time for train phase: 379.37 seconds
+2025-01-18 20:52:21,918 - INFO - [val] Epoch: 5/100 Loss: 4.8925 Acc: 0.1962
+2025-01-18 20:52:21,918 - INFO - Execution time for val phase: 51.06 seconds
+2025-01-18 20:52:21,923 - INFO - Starting epoch 6/100
+2025-01-18 20:58:42,127 - INFO - [train] Epoch: 6/100 Loss: 4.0880 Acc: 0.2446
+2025-01-18 20:58:42,128 - INFO - Execution time for train phase: 380.21 seconds
+2025-01-18 20:59:33,140 - INFO - [val] Epoch: 6/100 Loss: 4.9473 Acc: 0.2207
+2025-01-18 20:59:33,141 - INFO - Execution time for val phase: 51.01 seconds
+2025-01-18 20:59:33,143 - INFO - Starting epoch 7/100
+2025-01-18 21:05:53,199 - INFO - [train] Epoch: 7/100 Loss: 4.0415 Acc: 0.2537
+2025-01-18 21:05:53,199 - INFO - Execution time for train phase: 380.06 seconds
+2025-01-18 21:06:43,988 - INFO - [val] Epoch: 7/100 Loss: 4.3622 Acc: 0.2271
+2025-01-18 21:06:43,988 - INFO - Execution time for val phase: 50.79 seconds
+2025-01-18 21:06:43,990 - INFO - Starting epoch 8/100
+2025-01-18 21:13:03,826 - INFO - [train] Epoch: 8/100 Loss: 3.8616 Acc: 0.2758
+2025-01-18 21:13:03,827 - INFO - Execution time for train phase: 379.84 seconds
+2025-01-18 21:13:54,863 - INFO - [val] Epoch: 8/100 Loss: 6.8780 Acc: 0.2225
+2025-01-18 21:13:54,863 - INFO - Execution time for val phase: 51.03 seconds
+2025-01-18 21:13:54,865 - INFO - Starting epoch 9/100
+2025-01-18 21:20:15,465 - INFO - [train] Epoch: 9/100 Loss: 3.8986 Acc: 0.2744
+2025-01-18 21:20:15,465 - INFO - Execution time for train phase: 380.60 seconds
+2025-01-18 21:21:06,657 - INFO - [val] Epoch: 9/100 Loss: 6.4556 Acc: 0.2134
+2025-01-18 21:21:06,657 - INFO - Execution time for val phase: 51.18 seconds
+2025-01-18 21:21:06,659 - INFO - Starting epoch 10/100
+2025-01-18 21:27:26,602 - INFO - [train] Epoch: 10/100 Loss: 3.8456 Acc: 0.2849
+2025-01-18 21:27:26,602 - INFO - Execution time for train phase: 379.94 seconds
+2025-01-18 21:28:17,745 - INFO - [val] Epoch: 10/100 Loss: 6.0211 Acc: 0.2516
+2025-01-18 21:28:17,745 - INFO - Execution time for val phase: 51.14 seconds
+2025-01-18 21:29:18,070 - INFO - [test] Epoch: 10/100 Loss: nan Acc: 0.2006
+2025-01-18 21:29:18,071 - INFO - Execution time for test: 60.32 seconds
+2025-01-18 21:29:18,071 - INFO - Starting epoch 11/100
+2025-01-18 21:35:37,789 - INFO - [train] Epoch: 11/100 Loss: 3.8165 Acc: 0.2980
+2025-01-18 21:35:37,790 - INFO - Execution time for train phase: 379.72 seconds
+2025-01-18 21:36:28,960 - INFO - [val] Epoch: 11/100 Loss: 4.9059 Acc: 0.2307
+2025-01-18 21:36:28,961 - INFO - Execution time for val phase: 51.17 seconds
+2025-01-18 21:36:28,964 - INFO - Starting epoch 12/100
+2025-01-18 21:42:48,337 - INFO - [train] Epoch: 12/100 Loss: 3.6935 Acc: 0.3162
+2025-01-18 21:42:48,338 - INFO - Execution time for train phase: 379.37 seconds
+2025-01-18 21:43:39,479 - INFO - [val] Epoch: 12/100 Loss: 5.1219 Acc: 0.2543
+2025-01-18 21:43:39,479 - INFO - Execution time for val phase: 51.14 seconds
+2025-01-18 21:43:39,481 - INFO - Starting epoch 13/100
+2025-01-18 21:49:59,153 - INFO - [train] Epoch: 13/100 Loss: 3.6096 Acc: 0.3290
+2025-01-18 21:49:59,154 - INFO - Execution time for train phase: 379.67 seconds
+2025-01-18 21:50:50,283 - INFO - [val] Epoch: 13/100 Loss: 5.3878 Acc: 0.2352
+2025-01-18 21:50:50,283 - INFO - Execution time for val phase: 51.13 seconds
+2025-01-18 21:50:50,288 - INFO - Starting epoch 14/100
+2025-01-18 21:57:10,411 - INFO - [train] Epoch: 14/100 Loss: 3.5824 Acc: 0.3390
+2025-01-18 21:57:10,412 - INFO - Execution time for train phase: 380.12 seconds
+2025-01-18 21:58:01,710 - INFO - [val] Epoch: 14/100 Loss: 4.7933 Acc: 0.2707
+2025-01-18 21:58:01,710 - INFO - Execution time for val phase: 51.29 seconds
+2025-01-18 21:58:01,711 - INFO - Starting epoch 15/100
+2025-01-18 22:04:21,763 - INFO - [train] Epoch: 15/100 Loss: 3.6278 Acc: 0.3339
+2025-01-18 22:04:21,764 - INFO - Execution time for train phase: 380.05 seconds
+2025-01-18 22:05:12,770 - INFO - [val] Epoch: 15/100 Loss: 4.2964 Acc: 0.2688
+2025-01-18 22:05:12,771 - INFO - Execution time for val phase: 51.01 seconds
+2025-01-18 22:05:12,773 - INFO - Starting epoch 16/100
+2025-01-18 22:11:33,095 - INFO - [train] Epoch: 16/100 Loss: 3.4427 Acc: 0.3455
+2025-01-18 22:11:33,095 - INFO - Execution time for train phase: 380.32 seconds
+2025-01-18 22:12:24,277 - INFO - [val] Epoch: 16/100 Loss: 5.4264 Acc: 0.2643
+2025-01-18 22:12:24,277 - INFO - Execution time for val phase: 51.18 seconds
+2025-01-18 22:12:24,279 - INFO - Starting epoch 17/100
+2025-01-18 22:18:44,079 - INFO - [train] Epoch: 17/100 Loss: 3.3401 Acc: 0.3663
+2025-01-18 22:18:44,080 - INFO - Execution time for train phase: 379.80 seconds
+2025-01-18 22:19:35,464 - INFO - [val] Epoch: 17/100 Loss: 5.2994 Acc: 0.2761
+2025-01-18 22:19:35,464 - INFO - Execution time for val phase: 51.38 seconds
+2025-01-18 22:19:35,465 - INFO - Starting epoch 18/100
+2025-01-18 22:25:55,781 - INFO - [train] Epoch: 18/100 Loss: 3.4476 Acc: 0.3588
+2025-01-18 22:25:55,782 - INFO - Execution time for train phase: 380.32 seconds
+2025-01-18 22:26:47,025 - INFO - [val] Epoch: 18/100 Loss: 5.3282 Acc: 0.2552
+2025-01-18 22:26:47,025 - INFO - Execution time for val phase: 51.23 seconds
+2025-01-18 22:26:47,026 - INFO - Starting epoch 19/100
+2025-01-18 22:33:07,027 - INFO - [train] Epoch: 19/100 Loss: 3.3750 Acc: 0.3726
+2025-01-18 22:33:07,028 - INFO - Execution time for train phase: 380.00 seconds
+2025-01-18 22:33:58,441 - INFO - [val] Epoch: 19/100 Loss: 4.3979 Acc: 0.2688
+2025-01-18 22:33:58,441 - INFO - Execution time for val phase: 51.41 seconds
+2025-01-18 22:33:58,444 - INFO - Starting epoch 20/100
+2025-01-18 22:40:18,886 - INFO - [train] Epoch: 20/100 Loss: 3.4798 Acc: 0.3700
+2025-01-18 22:40:18,887 - INFO - Execution time for train phase: 380.44 seconds
+2025-01-18 22:41:10,244 - INFO - [val] Epoch: 20/100 Loss: 5.6353 Acc: 0.2625
+2025-01-18 22:41:10,245 - INFO - Execution time for val phase: 51.35 seconds
+2025-01-18 22:41:11,359 - INFO - Saved model checkpoint at /usr/users/volterrakernel/lepretre_cle/volterra/models/default_version/VNN_Fusion-hmdb51_epoch-19.pth.tar
+2025-01-18 22:42:15,631 - INFO - [test] Epoch: 20/100 Loss: 6.2456 Acc: 0.2398
+2025-01-18 22:42:15,631 - INFO - Execution time for test: 64.27 seconds
+2025-01-18 22:42:15,631 - INFO - Starting epoch 21/100
+2025-01-18 22:48:36,562 - INFO - [train] Epoch: 21/100 Loss: 3.1224 Acc: 0.4013
+2025-01-18 22:48:36,563 - INFO - Execution time for train phase: 380.93 seconds
+2025-01-18 22:49:27,718 - INFO - [val] Epoch: 21/100 Loss: 5.6073 Acc: 0.2761
+2025-01-18 22:49:27,718 - INFO - Execution time for val phase: 51.15 seconds
+2025-01-18 22:49:27,721 - INFO - Starting epoch 22/100
+2025-01-18 22:55:49,019 - INFO - [train] Epoch: 22/100 Loss: 3.1465 Acc: 0.3968
+2025-01-18 22:55:49,020 - INFO - Execution time for train phase: 381.30 seconds
+2025-01-18 22:56:40,321 - INFO - [val] Epoch: 22/100 Loss: 6.2250 Acc: 0.2861
+2025-01-18 22:56:40,321 - INFO - Execution time for val phase: 51.30 seconds
+2025-01-18 22:56:40,323 - INFO - Starting epoch 23/100
+2025-01-18 23:03:00,770 - INFO - [train] Epoch: 23/100 Loss: 3.1153 Acc: 0.4006
+2025-01-18 23:03:00,771 - INFO - Execution time for train phase: 380.45 seconds
+2025-01-18 23:03:51,967 - INFO - [val] Epoch: 23/100 Loss: 4.8511 Acc: 0.2870
+2025-01-18 23:03:51,968 - INFO - Execution time for val phase: 51.20 seconds
+2025-01-18 23:03:51,970 - INFO - Starting epoch 24/100
+2025-01-18 23:10:12,830 - INFO - [train] Epoch: 24/100 Loss: 3.0494 Acc: 0.4162
+2025-01-18 23:10:12,831 - INFO - Execution time for train phase: 380.86 seconds
+2025-01-18 23:11:03,972 - INFO - [val] Epoch: 24/100 Loss: 5.0455 Acc: 0.2843
+2025-01-18 23:11:03,972 - INFO - Execution time for val phase: 51.14 seconds
+2025-01-18 23:11:03,976 - INFO - Starting epoch 25/100
+2025-01-18 23:17:24,783 - INFO - [train] Epoch: 25/100 Loss: 3.0973 Acc: 0.4064
+2025-01-18 23:17:24,783 - INFO - Execution time for train phase: 380.81 seconds
+2025-01-18 23:18:15,964 - INFO - [val] Epoch: 25/100 Loss: 4.3176 Acc: 0.2979
+2025-01-18 23:18:15,964 - INFO - Execution time for val phase: 51.18 seconds
+2025-01-18 23:18:15,965 - INFO - Starting epoch 26/100
+2025-01-18 23:24:36,947 - INFO - [train] Epoch: 26/100 Loss: 3.0524 Acc: 0.4104
+2025-01-18 23:24:36,948 - INFO - Execution time for train phase: 380.98 seconds
+2025-01-18 23:25:28,475 - INFO - [val] Epoch: 26/100 Loss: 6.4608 Acc: 0.2698
+2025-01-18 23:25:28,475 - INFO - Execution time for val phase: 51.53 seconds
+2025-01-18 23:25:28,478 - INFO - Starting epoch 27/100
+2025-01-18 23:31:49,896 - INFO - [train] Epoch: 27/100 Loss: 2.9203 Acc: 0.4295
+2025-01-18 23:31:49,896 - INFO - Execution time for train phase: 381.42 seconds
+2025-01-18 23:32:41,148 - INFO - [val] Epoch: 27/100 Loss: 5.2573 Acc: 0.2997
+2025-01-18 23:32:41,148 - INFO - Execution time for val phase: 51.25 seconds
+2025-01-18 23:32:41,150 - INFO - Starting epoch 28/100
+2025-01-18 23:39:01,986 - INFO - [train] Epoch: 28/100 Loss: 3.0553 Acc: 0.4143
+2025-01-18 23:39:01,987 - INFO - Execution time for train phase: 380.84 seconds
+2025-01-18 23:39:53,634 - INFO - [val] Epoch: 28/100 Loss: 4.8415 Acc: 0.2807
+2025-01-18 23:39:53,634 - INFO - Execution time for val phase: 51.65 seconds
+2025-01-18 23:39:53,636 - INFO - Starting epoch 29/100
+2025-01-18 23:46:14,589 - INFO - [train] Epoch: 29/100 Loss: 2.8786 Acc: 0.4290
+2025-01-18 23:46:14,590 - INFO - Execution time for train phase: 380.95 seconds
+2025-01-18 23:47:06,098 - INFO - [val] Epoch: 29/100 Loss: 7.1957 Acc: 0.2634
+2025-01-18 23:47:06,098 - INFO - Execution time for val phase: 51.51 seconds
+2025-01-18 23:47:06,100 - INFO - Starting epoch 30/100
+2025-01-18 23:53:27,553 - INFO - [train] Epoch: 30/100 Loss: 2.9907 Acc: 0.4253
+2025-01-18 23:53:27,554 - INFO - Execution time for train phase: 381.45 seconds
+2025-01-18 23:54:18,934 - INFO - [val] Epoch: 30/100 Loss: 5.6544 Acc: 0.2716
+2025-01-18 23:54:18,934 - INFO - Execution time for val phase: 51.38 seconds
+2025-01-18 23:55:23,077 - INFO - [test] Epoch: 30/100 Loss: 6.4977 Acc: 0.2369
+2025-01-18 23:55:23,077 - INFO - Execution time for test: 64.14 seconds
+2025-01-18 23:55:23,077 - INFO - Starting epoch 31/100
+2025-01-19 00:01:43,096 - INFO - [train] Epoch: 31/100 Loss: 2.8621 Acc: 0.4484
+2025-01-19 00:01:43,097 - INFO - Execution time for train phase: 380.02 seconds
+2025-01-19 00:02:34,629 - INFO - [val] Epoch: 31/100 Loss: 5.3837 Acc: 0.3261
+2025-01-19 00:02:34,629 - INFO - Execution time for val phase: 51.53 seconds
+2025-01-19 00:02:34,631 - INFO - Starting epoch 32/100
+2025-01-19 00:08:54,936 - INFO - [train] Epoch: 32/100 Loss: 2.9633 Acc: 0.4278
+2025-01-19 00:08:54,937 - INFO - Execution time for train phase: 380.31 seconds
+2025-01-19 00:09:46,515 - INFO - [val] Epoch: 32/100 Loss: 5.4128 Acc: 0.2797
+2025-01-19 00:09:46,515 - INFO - Execution time for val phase: 51.58 seconds
+2025-01-19 00:09:46,517 - INFO - Starting epoch 33/100
+2025-01-19 00:16:06,953 - INFO - [train] Epoch: 33/100 Loss: 2.8126 Acc: 0.4488
+2025-01-19 00:16:06,954 - INFO - Execution time for train phase: 380.44 seconds
+2025-01-19 00:16:58,134 - INFO - [val] Epoch: 33/100 Loss: 4.5899 Acc: 0.3261
+2025-01-19 00:16:58,134 - INFO - Execution time for val phase: 51.18 seconds
+2025-01-19 00:16:58,139 - INFO - Starting epoch 34/100
+2025-01-19 00:23:18,888 - INFO - [train] Epoch: 34/100 Loss: 2.8328 Acc: 0.4418
+2025-01-19 00:23:18,889 - INFO - Execution time for train phase: 380.75 seconds
+2025-01-19 00:24:10,640 - INFO - [val] Epoch: 34/100 Loss: 5.8326 Acc: 0.3070
+2025-01-19 00:24:10,640 - INFO - Execution time for val phase: 51.75 seconds
+2025-01-19 00:24:10,642 - INFO - Starting epoch 35/100
+2025-01-19 00:30:30,551 - INFO - [train] Epoch: 35/100 Loss: 2.7733 Acc: 0.4628
+2025-01-19 00:30:30,552 - INFO - Execution time for train phase: 379.91 seconds
+2025-01-19 00:31:21,933 - INFO - [val] Epoch: 35/100 Loss: 4.4783 Acc: 0.3197
+2025-01-19 00:31:21,933 - INFO - Execution time for val phase: 51.38 seconds
+2025-01-19 00:31:21,935 - INFO - Starting epoch 36/100
+2025-01-19 00:37:42,215 - INFO - [train] Epoch: 36/100 Loss: 2.8012 Acc: 0.4658
+2025-01-19 00:37:42,216 - INFO - Execution time for train phase: 380.28 seconds
+2025-01-19 00:38:33,978 - INFO - [val] Epoch: 36/100 Loss: 3.9320 Acc: 0.3488
+2025-01-19 00:38:33,978 - INFO - Execution time for val phase: 51.76 seconds
+2025-01-19 00:38:33,983 - INFO - Starting epoch 37/100
+2025-01-19 00:44:54,412 - INFO - [train] Epoch: 37/100 Loss: 2.7555 Acc: 0.4628
+2025-01-19 00:44:54,413 - INFO - Execution time for train phase: 380.43 seconds
+2025-01-19 00:45:46,041 - INFO - [val] Epoch: 37/100 Loss: 3.9591 Acc: 0.3197
+2025-01-19 00:45:46,041 - INFO - Execution time for val phase: 51.63 seconds
+2025-01-19 00:45:46,042 - INFO - Starting epoch 38/100
+2025-01-19 00:52:06,634 - INFO - [train] Epoch: 38/100 Loss: 2.6503 Acc: 0.4707
+2025-01-19 00:52:06,635 - INFO - Execution time for train phase: 380.59 seconds
+2025-01-19 00:52:58,489 - INFO - [val] Epoch: 38/100 Loss: 4.2793 Acc: 0.3188
+2025-01-19 00:52:58,490 - INFO - Execution time for val phase: 51.85 seconds
+2025-01-19 00:52:58,491 - INFO - Starting epoch 39/100
+2025-01-19 00:59:19,582 - INFO - [train] Epoch: 39/100 Loss: 2.6344 Acc: 0.4752
+2025-01-19 00:59:19,582 - INFO - Execution time for train phase: 381.09 seconds
+2025-01-19 01:00:11,081 - INFO - [val] Epoch: 39/100 Loss: 5.3580 Acc: 0.3134
+2025-01-19 01:00:11,081 - INFO - Execution time for val phase: 51.49 seconds
+2025-01-19 01:00:11,087 - INFO - Starting epoch 40/100
+2025-01-19 01:06:31,956 - INFO - [train] Epoch: 40/100 Loss: 2.7043 Acc: 0.4726
+2025-01-19 01:06:31,957 - INFO - Execution time for train phase: 380.87 seconds
+2025-01-19 01:07:23,463 - INFO - [val] Epoch: 40/100 Loss: 4.6519 Acc: 0.3252
+2025-01-19 01:07:23,464 - INFO - Execution time for val phase: 51.50 seconds
+2025-01-19 01:07:24,640 - INFO - Saved model checkpoint at /usr/users/volterrakernel/lepretre_cle/volterra/models/default_version/VNN_Fusion-hmdb51_epoch-39.pth.tar
+2025-01-19 01:08:29,480 - INFO - [test] Epoch: 40/100 Loss: nan Acc: 0.2754
+2025-01-19 01:08:29,480 - INFO - Execution time for test: 64.84 seconds
+2025-01-19 01:08:29,480 - INFO - Starting epoch 41/100
+2025-01-19 01:14:50,464 - INFO - [train] Epoch: 41/100 Loss: 2.5375 Acc: 0.4906
+2025-01-19 01:14:50,465 - INFO - Execution time for train phase: 380.99 seconds
+2025-01-19 01:15:41,924 - INFO - [val] Epoch: 41/100 Loss: 6.1008 Acc: 0.3342
+2025-01-19 01:15:41,925 - INFO - Execution time for val phase: 51.45 seconds
+2025-01-19 01:15:41,932 - INFO - Starting epoch 42/100
+2025-01-19 01:22:03,268 - INFO - [train] Epoch: 42/100 Loss: 2.6872 Acc: 0.4836
+2025-01-19 01:22:03,269 - INFO - Execution time for train phase: 381.34 seconds
+2025-01-19 01:22:54,772 - INFO - [val] Epoch: 42/100 Loss: 5.9934 Acc: 0.2970
+2025-01-19 01:22:54,772 - INFO - Execution time for val phase: 51.50 seconds
+2025-01-19 01:22:54,777 - INFO - Starting epoch 43/100
+2025-01-19 01:29:15,743 - INFO - [train] Epoch: 43/100 Loss: 2.5773 Acc: 0.4836
+2025-01-19 01:29:15,744 - INFO - Execution time for train phase: 380.97 seconds
+2025-01-19 01:30:07,594 - INFO - [val] Epoch: 43/100 Loss: 5.9188 Acc: 0.3243
+2025-01-19 01:30:07,594 - INFO - Execution time for val phase: 51.84 seconds
+2025-01-19 01:30:07,595 - INFO - Starting epoch 44/100
+2025-01-19 01:36:29,297 - INFO - [train] Epoch: 44/100 Loss: 2.5830 Acc: 0.4829
+2025-01-19 01:36:29,298 - INFO - Execution time for train phase: 381.70 seconds
+2025-01-19 01:37:20,872 - INFO - [val] Epoch: 44/100 Loss: 5.5404 Acc: 0.3052
+2025-01-19 01:37:20,872 - INFO - Execution time for val phase: 51.57 seconds
+2025-01-19 01:37:20,874 - INFO - Starting epoch 45/100
+2025-01-19 01:43:42,498 - INFO - [train] Epoch: 45/100 Loss: 2.5660 Acc: 0.4885
+2025-01-19 01:43:42,498 - INFO - Execution time for train phase: 381.62 seconds
+2025-01-19 01:44:34,033 - INFO - [val] Epoch: 45/100 Loss: 6.2356 Acc: 0.3206
+2025-01-19 01:44:34,033 - INFO - Execution time for val phase: 51.53 seconds
+2025-01-19 01:44:34,035 - INFO - Starting epoch 46/100
+2025-01-19 01:50:55,441 - INFO - [train] Epoch: 46/100 Loss: 2.4755 Acc: 0.5069
+2025-01-19 01:50:55,442 - INFO - Execution time for train phase: 381.41 seconds
+2025-01-19 01:51:47,411 - INFO - [val] Epoch: 46/100 Loss: 5.8285 Acc: 0.3015
+2025-01-19 01:51:47,411 - INFO - Execution time for val phase: 51.97 seconds
+2025-01-19 01:51:47,412 - INFO - Starting epoch 47/100
+2025-01-19 01:58:08,363 - INFO - [train] Epoch: 47/100 Loss: 2.5625 Acc: 0.5010
+2025-01-19 01:58:08,363 - INFO - Execution time for train phase: 380.95 seconds
+2025-01-19 01:59:00,061 - INFO - [val] Epoch: 47/100 Loss: 4.2533 Acc: 0.3370
+2025-01-19 01:59:00,061 - INFO - Execution time for val phase: 51.70 seconds
+2025-01-19 01:59:00,063 - INFO - Starting epoch 48/100
+2025-01-19 02:05:21,097 - INFO - [train] Epoch: 48/100 Loss: 2.4825 Acc: 0.5020
+2025-01-19 02:05:21,098 - INFO - Execution time for train phase: 381.04 seconds
+2025-01-19 02:06:12,654 - INFO - [val] Epoch: 48/100 Loss: 4.6900 Acc: 0.3288
+2025-01-19 02:06:12,654 - INFO - Execution time for val phase: 51.55 seconds
+2025-01-19 02:06:12,656 - INFO - Starting epoch 49/100
+2025-01-19 02:12:34,132 - INFO - [train] Epoch: 49/100 Loss: 2.4579 Acc: 0.5120
+2025-01-19 02:12:34,133 - INFO - Execution time for train phase: 381.48 seconds
+2025-01-19 02:13:25,979 - INFO - [val] Epoch: 49/100 Loss: 4.5654 Acc: 0.3288
+2025-01-19 02:13:25,979 - INFO - Execution time for val phase: 51.85 seconds
+2025-01-19 02:13:25,981 - INFO - Starting epoch 50/100
+2025-01-19 02:19:48,045 - INFO - [train] Epoch: 50/100 Loss: 2.4760 Acc: 0.5094
+2025-01-19 02:19:48,046 - INFO - Execution time for train phase: 382.06 seconds
+2025-01-19 02:20:39,702 - INFO - [val] Epoch: 50/100 Loss: 4.9016 Acc: 0.3497
+2025-01-19 02:20:39,703 - INFO - Execution time for val phase: 51.64 seconds
+2025-01-19 02:21:44,219 - INFO - [test] Epoch: 50/100 Loss: 5.5592 Acc: 0.2972
+2025-01-19 02:21:44,220 - INFO - Execution time for test: 64.51 seconds
+2025-01-19 02:21:44,220 - INFO - Starting epoch 51/100
+2025-01-19 02:28:06,578 - INFO - [train] Epoch: 51/100 Loss: 2.3293 Acc: 0.5281
+2025-01-19 02:28:06,579 - INFO - Execution time for train phase: 382.36 seconds
+2025-01-19 02:28:58,396 - INFO - [val] Epoch: 51/100 Loss: 5.6936 Acc: 0.3569
+2025-01-19 02:28:58,397 - INFO - Execution time for val phase: 51.82 seconds
+2025-01-19 02:28:58,398 - INFO - Starting epoch 52/100
+2025-01-19 02:35:20,545 - INFO - [train] Epoch: 52/100 Loss: 2.4705 Acc: 0.5104
+2025-01-19 02:35:20,546 - INFO - Execution time for train phase: 382.15 seconds
+2025-01-19 02:36:12,152 - INFO - [val] Epoch: 52/100 Loss: 5.9720 Acc: 0.3143
+2025-01-19 02:36:12,152 - INFO - Execution time for val phase: 51.60 seconds
+2025-01-19 02:36:12,163 - INFO - Starting epoch 53/100
+2025-01-19 02:42:34,874 - INFO - [train] Epoch: 53/100 Loss: 2.4523 Acc: 0.5164
+2025-01-19 02:42:34,875 - INFO - Execution time for train phase: 382.71 seconds
+2025-01-19 02:43:26,714 - INFO - [val] Epoch: 53/100 Loss: 5.1514 Acc: 0.3288
+2025-01-19 02:43:26,714 - INFO - Execution time for val phase: 51.83 seconds
+2025-01-19 02:43:26,717 - INFO - Starting epoch 54/100
+2025-01-19 02:49:49,844 - INFO - [train] Epoch: 54/100 Loss: 2.3887 Acc: 0.5307
+2025-01-19 02:49:49,844 - INFO - Execution time for train phase: 383.13 seconds
+2025-01-19 02:50:41,450 - INFO - [val] Epoch: 54/100 Loss: 4.5653 Acc: 0.3442
+2025-01-19 02:50:41,451 - INFO - Execution time for val phase: 51.60 seconds
+2025-01-19 02:50:41,454 - INFO - Starting epoch 55/100
+2025-01-19 02:57:04,155 - INFO - [train] Epoch: 55/100 Loss: 2.3539 Acc: 0.5262
+2025-01-19 02:57:04,156 - INFO - Execution time for train phase: 382.70 seconds
+2025-01-19 02:57:55,981 - INFO - [val] Epoch: 55/100 Loss: 5.3088 Acc: 0.3351
+2025-01-19 02:57:55,982 - INFO - Execution time for val phase: 51.82 seconds
+2025-01-19 02:57:55,983 - INFO - Starting epoch 56/100
+2025-01-19 03:04:19,181 - INFO - [train] Epoch: 56/100 Loss: 2.5250 Acc: 0.5113
+2025-01-19 03:04:19,181 - INFO - Execution time for train phase: 383.20 seconds
+2025-01-19 03:05:11,112 - INFO - [val] Epoch: 56/100 Loss: 4.6875 Acc: 0.3451
+2025-01-19 03:05:11,112 - INFO - Execution time for val phase: 51.93 seconds
+2025-01-19 03:05:11,126 - INFO - Starting epoch 57/100
+2025-01-19 03:11:33,651 - INFO - [train] Epoch: 57/100 Loss: 2.3419 Acc: 0.5297
+2025-01-19 03:11:33,652 - INFO - Execution time for train phase: 382.53 seconds
+2025-01-19 03:12:25,417 - INFO - [val] Epoch: 57/100 Loss: 5.6640 Acc: 0.3506
+2025-01-19 03:12:25,417 - INFO - Execution time for val phase: 51.76 seconds
+2025-01-19 03:12:25,419 - INFO - Starting epoch 58/100
+2025-01-19 03:18:45,112 - INFO - [train] Epoch: 58/100 Loss: 2.2480 Acc: 0.5433
+2025-01-19 03:18:45,113 - INFO - Execution time for train phase: 379.69 seconds
+2025-01-19 03:19:36,201 - INFO - [val] Epoch: 58/100 Loss: 5.4018 Acc: 0.3442
+2025-01-19 03:19:36,201 - INFO - Execution time for val phase: 51.09 seconds
+2025-01-19 03:19:36,203 - INFO - Starting epoch 59/100
+2025-01-19 03:25:55,161 - INFO - [train] Epoch: 59/100 Loss: 2.3162 Acc: 0.5339
+2025-01-19 03:25:55,162 - INFO - Execution time for train phase: 378.96 seconds
+2025-01-19 03:26:45,817 - INFO - [val] Epoch: 59/100 Loss: 4.9294 Acc: 0.3342
+2025-01-19 03:26:45,817 - INFO - Execution time for val phase: 50.65 seconds
+2025-01-19 03:26:45,819 - INFO - Starting epoch 60/100
+2025-01-19 03:33:05,537 - INFO - [train] Epoch: 60/100 Loss: 2.2025 Acc: 0.5530
+2025-01-19 03:33:05,538 - INFO - Execution time for train phase: 379.72 seconds
+2025-01-19 03:33:56,566 - INFO - [val] Epoch: 60/100 Loss: 5.2043 Acc: 0.3515
+2025-01-19 03:33:56,567 - INFO - Execution time for val phase: 51.03 seconds
+2025-01-19 03:33:57,695 - INFO - Saved model checkpoint at /usr/users/volterrakernel/lepretre_cle/volterra/models/default_version/VNN_Fusion-hmdb51_epoch-59.pth.tar
+2025-01-19 03:35:01,153 - INFO - [test] Epoch: 60/100 Loss: 6.6705 Acc: 0.3023
+2025-01-19 03:35:01,153 - INFO - Execution time for test: 63.46 seconds
+2025-01-19 03:35:01,153 - INFO - Starting epoch 61/100
+2025-01-19 03:41:19,307 - INFO - [train] Epoch: 61/100 Loss: 2.2835 Acc: 0.5523
+2025-01-19 03:41:19,308 - INFO - Execution time for train phase: 378.15 seconds
+2025-01-19 03:42:10,284 - INFO - [val] Epoch: 61/100 Loss: 5.2790 Acc: 0.3206
+2025-01-19 03:42:10,285 - INFO - Execution time for val phase: 50.98 seconds
+2025-01-19 03:42:10,286 - INFO - Starting epoch 62/100
+2025-01-19 03:48:28,994 - INFO - [train] Epoch: 62/100 Loss: 2.2171 Acc: 0.5542
+2025-01-19 03:48:28,994 - INFO - Execution time for train phase: 378.71 seconds
+2025-01-19 03:49:20,040 - INFO - [val] Epoch: 62/100 Loss: 5.8842 Acc: 0.3252
+2025-01-19 03:49:20,040 - INFO - Execution time for val phase: 51.05 seconds
+2025-01-19 03:49:20,042 - INFO - Starting epoch 63/100
+2025-01-19 03:55:38,669 - INFO - [train] Epoch: 63/100 Loss: 2.2513 Acc: 0.5444
+2025-01-19 03:55:38,669 - INFO - Execution time for train phase: 378.63 seconds
+2025-01-19 03:56:29,429 - INFO - [val] Epoch: 63/100 Loss: 5.3880 Acc: 0.3424
+2025-01-19 03:56:29,430 - INFO - Execution time for val phase: 50.76 seconds
+2025-01-19 03:56:29,433 - INFO - Starting epoch 64/100
+2025-01-19 04:02:48,017 - INFO - [train] Epoch: 64/100 Loss: 2.2149 Acc: 0.5596
+2025-01-19 04:02:48,018 - INFO - Execution time for train phase: 378.58 seconds
+2025-01-19 04:03:39,003 - INFO - [val] Epoch: 64/100 Loss: 5.4522 Acc: 0.3615
+2025-01-19 04:03:39,004 - INFO - Execution time for val phase: 50.98 seconds
+2025-01-19 04:03:39,008 - INFO - Starting epoch 65/100

@@ -1,0 +1,712 @@
+2025-01-18 14:16:33,915 - INFO - Logging initialized. Log file: /usr/users/volterrakernel/lepretre_cle/volterra/logs/v2/VNN-Fusion-v2-train-run-2025-01-18-14-16-33.log
+2025-01-18 14:16:33,916 - INFO - Model version: v2
+2025-01-18 14:16:33,978 - INFO - Using device: cuda:0
+2025-01-18 14:16:33,979 - DEBUG - Initializing architecture configuration.
+2025-01-18 14:16:33,979 - DEBUG - Calculating feature dimensions dynamically.
+2025-01-18 14:16:33,979 - DEBUG - Initial input dimensions: 16x112x112
+2025-01-18 14:16:33,979 - DEBUG - After layer with stride 1: 16x112x112
+2025-01-18 14:16:33,979 - DEBUG - After layer with stride 2: 8x56x56
+2025-01-18 14:16:33,979 - DEBUG - After layer with stride 1: 8x56x56
+2025-01-18 14:16:33,979 - DEBUG - After layer with stride 2: 4x28x28
+2025-01-18 14:16:33,979 - DEBUG - Initializing layers.
+2025-01-18 14:16:34,153 - DEBUG - Initialized eta_1 with shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:34,335 - DEBUG - Initialized eta_2 with shape: torch.Size([32, 27, 16, 112, 112])
+2025-01-18 14:16:34,690 - DEBUG - Initialized eta_3 with shape: torch.Size([64, 27, 16, 112, 112])
+2025-01-18 14:16:35,228 - DEBUG - Initialized eta_4 with shape: torch.Size([96, 27, 16, 112, 112])
+2025-01-18 14:16:35,232 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 1
+2025-01-18 14:16:35,232 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 2
+2025-01-18 14:16:35,232 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 3
+2025-01-18 14:16:35,232 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 4
+2025-01-18 14:16:35,232 - DEBUG - Initializing weights for all layers.
+2025-01-18 14:16:35,232 - DEBUG - Initializing architecture configuration.
+2025-01-18 14:16:35,232 - DEBUG - Calculating feature dimensions dynamically.
+2025-01-18 14:16:35,232 - DEBUG - Initial input dimensions: 16x112x112
+2025-01-18 14:16:35,232 - DEBUG - After layer with stride 1: 16x112x112
+2025-01-18 14:16:35,232 - DEBUG - After layer with stride 2: 8x56x56
+2025-01-18 14:16:35,232 - DEBUG - After layer with stride 1: 8x56x56
+2025-01-18 14:16:35,232 - DEBUG - After layer with stride 2: 4x28x28
+2025-01-18 14:16:35,233 - DEBUG - Initializing layers.
+2025-01-18 14:16:35,387 - DEBUG - Initialized eta_1 with shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:35,569 - DEBUG - Initialized eta_2 with shape: torch.Size([32, 27, 16, 112, 112])
+2025-01-18 14:16:35,923 - DEBUG - Initialized eta_3 with shape: torch.Size([64, 27, 16, 112, 112])
+2025-01-18 14:16:36,454 - DEBUG - Initialized eta_4 with shape: torch.Size([96, 27, 16, 112, 112])
+2025-01-18 14:16:36,455 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 1
+2025-01-18 14:16:36,455 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 2
+2025-01-18 14:16:36,456 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 3
+2025-01-18 14:16:36,456 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 4
+2025-01-18 14:16:36,456 - DEBUG - Initializing weights for all layers.
+2025-01-18 14:16:38,241 - INFO - Total model parameters: 2354.60M
+2025-01-18 14:16:39,779 - INFO - TensorBoard log directory: /usr/users/volterrakernel/lepretre_cle/volterra/models/Jan18_14-16-39_sh05
+2025-01-18 14:16:39,779 - INFO - Dataset: hmdb51, Root: ./data/HMDB51/videos, Output: ./data/HMDB51/preprocessed
+2025-01-18 14:16:39,780 - DEBUG - Checking preprocessing for hmdb51
+2025-01-18 14:16:40,008 - DEBUG - Preprocessing check passed
+2025-01-18 14:16:40,082 - INFO - Number of train videos: 4289
+2025-01-18 14:16:40,088 - INFO - Dataset: hmdb51, Root: ./data/HMDB51/videos, Output: ./data/HMDB51/preprocessed
+2025-01-18 14:16:40,088 - DEBUG - Checking preprocessing for hmdb51
+2025-01-18 14:16:40,290 - DEBUG - Preprocessing check passed
+2025-01-18 14:16:40,331 - INFO - Number of val videos: 1101
+2025-01-18 14:16:40,336 - INFO - Dataset: hmdb51, Root: ./data/HMDB51/videos, Output: ./data/HMDB51/preprocessed
+2025-01-18 14:16:40,336 - DEBUG - Checking preprocessing for hmdb51
+2025-01-18 14:16:40,551 - DEBUG - Preprocessing check passed
+2025-01-18 14:16:40,595 - INFO - Number of test videos: 1376
+2025-01-18 14:16:40,601 - INFO - Starting epoch 1/100
+2025-01-18 14:16:41,967 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:41,995 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:41,995 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:41,997 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:42,011 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:42,308 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:42,308 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:42,308 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:42,308 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:42,309 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:42,589 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:42,589 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:42,590 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:42,590 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:42,590 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:42,875 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:42,876 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:42,876 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:42,876 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:42,876 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:43,163 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:43,163 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:43,163 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:43,163 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:43,164 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:43,439 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:43,440 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:43,440 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:43,440 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:43,440 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:43,745 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:43,746 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:43,746 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:43,746 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:43,746 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:44,033 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:44,033 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:44,033 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:44,033 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:44,034 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:44,319 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:44,319 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:44,319 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:44,319 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:44,320 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:44,607 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:44,608 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:44,608 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:44,608 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:44,608 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:44,879 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:44,879 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:44,879 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:44,879 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:44,880 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:45,162 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:45,162 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:45,162 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:45,162 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:45,162 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:45,449 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:45,457 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:45,457 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:45,457 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:45,458 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:45,747 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:45,747 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:45,748 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:45,748 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:45,748 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:46,035 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:46,035 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:46,035 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:46,035 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:46,036 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:46,339 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:46,340 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:46,340 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:46,340 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:46,341 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:46,641 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:46,641 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:46,642 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:46,642 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:46,642 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:46,933 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:46,933 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:46,933 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:46,933 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:46,934 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:47,207 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:47,208 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:47,208 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:47,208 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:47,208 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:47,497 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:47,497 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:47,497 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:47,498 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:47,498 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:47,803 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:47,803 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:47,803 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:47,803 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:47,803 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:48,090 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:48,091 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:48,091 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:48,091 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:48,092 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:48,384 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:48,385 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:48,385 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:48,385 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:48,385 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:48,675 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:48,676 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:48,676 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:48,676 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:48,677 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:48,952 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:48,953 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:48,953 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:48,953 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:48,954 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:49,238 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:49,238 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:49,238 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:49,238 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:49,239 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:49,519 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:49,519 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:49,519 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:49,519 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:49,520 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:49,806 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:49,806 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:49,806 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:49,806 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:49,806 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:50,086 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:50,087 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:50,087 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:50,087 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:50,088 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:50,382 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:50,383 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:50,383 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:50,383 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:50,384 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:50,648 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:50,649 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:50,649 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:50,649 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:50,649 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:50,922 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:50,922 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:50,923 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:50,923 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:50,923 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:51,241 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:51,241 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:51,242 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:51,242 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:51,242 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:51,508 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:51,509 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:51,509 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:51,509 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:51,509 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:51,776 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:51,777 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:51,777 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:51,777 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:51,777 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:52,067 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:52,068 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:52,068 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:52,068 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:52,069 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:52,364 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:52,365 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:52,365 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:52,365 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:52,365 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:52,649 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:52,649 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:52,650 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:52,650 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:52,650 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:52,955 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:52,956 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:52,956 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:52,956 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:52,956 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:53,248 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:53,248 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:53,248 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:53,248 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:53,249 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:53,531 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:53,531 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:53,531 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:53,531 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:53,531 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:53,809 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:53,809 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:53,809 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:53,810 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:53,810 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:54,122 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:54,123 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:54,123 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:54,123 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:54,123 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:54,405 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:54,405 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:54,405 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:54,405 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:54,406 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:54,701 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:54,702 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:54,702 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:54,702 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:54,702 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:54,979 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:54,983 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:54,983 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:54,984 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:54,984 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:55,286 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:55,287 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:55,287 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:55,287 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:55,287 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:55,593 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:55,593 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:55,593 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:55,594 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:55,594 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:55,876 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:55,877 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:55,877 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:55,877 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:55,877 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:56,151 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:56,151 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:56,151 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:56,151 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:56,151 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:56,452 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:56,453 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:56,453 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:56,453 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:56,453 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:56,738 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:56,738 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:56,738 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:56,738 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:56,739 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:57,044 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:57,045 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:57,045 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:57,045 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:57,045 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:57,331 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:57,331 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:57,331 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:57,331 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:57,331 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:57,623 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:57,623 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:57,624 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:57,624 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:57,624 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:57,919 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:57,919 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:57,920 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:57,920 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:57,920 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:58,193 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:58,193 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:58,194 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:58,194 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:58,194 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:58,473 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:58,473 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:58,473 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:58,473 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:58,474 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:58,769 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:58,769 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:58,769 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:58,769 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:58,770 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:59,045 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:59,045 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:59,045 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:59,045 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:59,046 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:59,342 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:59,342 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:59,342 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:59,342 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:59,342 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:59,625 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:59,626 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:59,626 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:59,626 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:59,626 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:16:59,893 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:16:59,893 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:59,893 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:16:59,893 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:16:59,894 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:00,171 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:00,172 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:00,172 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:00,172 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:00,172 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:00,465 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:00,465 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:00,466 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:00,466 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:00,466 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:00,738 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:00,738 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:00,738 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:00,738 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:00,739 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:01,029 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:01,029 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:01,029 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:01,029 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:01,030 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:01,310 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:01,311 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:01,311 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:01,311 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:01,311 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:01,612 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:01,612 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:01,612 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:01,612 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:01,612 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:01,885 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:01,885 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:01,886 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:01,886 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:01,886 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:02,171 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:02,172 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:02,172 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:02,172 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:02,172 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:02,450 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:02,451 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:02,451 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:02,451 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:02,451 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:02,757 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:02,757 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:02,758 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:02,758 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:02,758 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:03,040 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:03,041 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:03,041 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:03,041 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:03,041 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:03,324 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:03,325 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:03,325 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:03,325 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:03,325 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:03,622 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:03,622 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:03,622 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:03,622 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:03,622 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:03,941 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:03,941 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:03,942 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:03,942 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:03,942 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:04,205 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:04,206 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:04,206 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:04,206 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:04,206 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:04,492 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:04,492 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:04,492 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:04,492 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:04,492 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:04,774 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:04,774 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:04,775 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:04,775 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:04,775 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:05,071 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:05,072 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:05,072 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:05,072 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:05,072 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:05,353 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:05,353 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:05,353 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:05,353 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:05,354 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:05,620 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:05,621 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:05,621 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:05,621 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:05,621 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:05,923 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:05,923 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:05,923 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:05,923 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:05,923 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:06,206 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:06,207 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:06,207 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:06,207 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:06,207 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:06,482 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:06,482 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:06,482 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:06,483 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:06,483 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:06,747 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:06,747 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:06,747 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:06,747 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:06,747 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:07,030 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:07,031 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:07,031 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:07,031 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:07,031 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:07,311 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:07,311 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:07,311 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:07,311 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:07,311 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:07,594 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:07,594 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:07,594 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:07,594 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:07,595 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:07,872 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:07,872 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:07,872 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:07,872 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:07,873 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:08,173 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:08,173 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:08,173 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:08,174 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:08,174 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:08,466 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:08,466 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:08,466 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:08,467 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:08,467 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:08,753 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:08,754 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:08,754 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:08,754 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:08,754 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:09,039 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:09,039 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:09,039 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:09,039 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:09,040 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:09,334 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:09,335 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:09,335 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:09,336 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:09,336 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:09,646 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:09,647 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:09,647 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:09,647 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:09,648 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:09,940 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:09,940 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:09,940 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:09,940 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:09,941 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:10,223 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:10,223 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:10,224 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:10,224 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:10,224 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:10,508 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:10,509 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:10,509 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:10,509 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:10,510 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:10,795 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:10,795 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:10,795 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:10,795 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:10,795 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:11,066 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:11,067 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:11,067 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:11,067 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:11,067 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:11,341 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:11,341 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:11,341 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:11,341 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:11,342 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:11,635 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:11,636 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:11,636 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:11,636 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:11,636 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:11,944 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:11,944 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:11,944 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:11,944 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:11,944 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:12,228 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:12,228 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:12,228 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:12,228 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:12,229 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:12,511 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:12,512 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:12,512 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:12,512 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:12,512 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:12,791 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:12,792 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:12,792 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:12,792 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:12,792 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:13,101 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:13,102 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:13,102 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:13,102 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:13,102 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:13,389 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:13,390 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:13,390 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:13,390 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:13,390 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:13,673 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:13,674 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:13,674 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:13,674 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:13,674 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:13,950 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:13,951 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:13,951 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:13,951 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:13,951 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:14,238 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:14,238 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:14,238 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:14,238 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:14,238 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:14,523 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:14,524 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:14,524 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:14,524 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:14,525 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:14,804 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:14,804 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:14,804 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:14,805 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:14,805 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:15,080 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:15,080 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:15,080 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:15,080 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:15,081 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:15,376 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:15,376 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:15,377 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:15,377 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:15,377 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:15,665 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:15,665 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:15,666 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:15,666 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:15,666 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:15,967 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:15,968 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:15,968 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:15,968 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:15,968 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:16,243 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:16,244 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:16,244 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:16,244 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:16,244 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:16,528 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:16,528 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:16,529 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:16,529 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:16,529 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:16,815 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:16,815 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:16,815 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:16,815 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:16,816 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:17,103 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:17,104 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:17,104 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:17,104 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:17,104 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:17,380 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:17,381 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:17,381 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:17,381 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:17,381 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:17,677 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:17,678 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:17,678 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:17,678 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:17,678 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:17,967 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:17,967 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:17,967 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:17,967 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:17,968 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:18,242 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:18,243 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:18,243 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:18,243 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:18,244 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:18,531 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:18,532 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:18,532 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:18,532 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:18,532 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:18,813 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:18,813 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:18,814 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:18,814 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:18,814 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:19,084 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:19,084 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:19,084 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:19,084 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:19,085 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:19,357 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:19,357 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:19,357 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:19,357 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:19,357 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+2025-01-18 14:17:19,665 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 14:17:19,666 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:19,666 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 14:17:19,666 - DEBUG - Input eta shape: torch.Size([24, 27, 16, 112, 112])
+2025-01-18 14:17:19,666 - ERROR - Error processing batch in train phase: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.

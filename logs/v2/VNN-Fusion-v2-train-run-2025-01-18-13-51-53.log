@@ -1,0 +1,868 @@
+2025-01-18 13:51:53,114 - INFO - Logging initialized. Log file: /usr/users/volterrakernel/lepretre_cle/volterra/logs/v2/VNN-Fusion-v2-train-run-2025-01-18-13-51-53.log
+2025-01-18 13:51:53,114 - INFO - Model version: v2
+2025-01-18 13:51:53,169 - INFO - Using device: cuda:0
+2025-01-18 13:51:53,170 - DEBUG - Initializing architecture configuration.
+2025-01-18 13:51:53,170 - DEBUG - Calculating feature dimensions dynamically.
+2025-01-18 13:51:53,170 - DEBUG - Initial input dimensions: 16x112x112
+2025-01-18 13:51:53,170 - DEBUG - After layer with stride 1: 16x112x112
+2025-01-18 13:51:53,170 - DEBUG - After layer with stride 2: 8x56x56
+2025-01-18 13:51:53,170 - DEBUG - After layer with stride 1: 8x56x56
+2025-01-18 13:51:53,170 - DEBUG - After layer with stride 2: 4x28x28
+2025-01-18 13:51:53,170 - DEBUG - Initializing layers.
+2025-01-18 13:51:53,184 - DEBUG - Initialized eta_1 with shape: torch.Size([24])
+2025-01-18 13:51:53,184 - DEBUG - Initialized eta_2 with shape: torch.Size([32])
+2025-01-18 13:51:53,184 - DEBUG - Initialized eta_3 with shape: torch.Size([64])
+2025-01-18 13:51:53,184 - DEBUG - Initialized eta_4 with shape: torch.Size([96])
+2025-01-18 13:51:53,185 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 1
+2025-01-18 13:51:53,186 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 2
+2025-01-18 13:51:53,186 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 3
+2025-01-18 13:51:53,187 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 4
+2025-01-18 13:51:53,187 - DEBUG - Initializing weights for all layers.
+2025-01-18 13:51:53,187 - DEBUG - Initializing architecture configuration.
+2025-01-18 13:51:53,188 - DEBUG - Calculating feature dimensions dynamically.
+2025-01-18 13:51:53,188 - DEBUG - Initial input dimensions: 16x112x112
+2025-01-18 13:51:53,188 - DEBUG - After layer with stride 1: 16x112x112
+2025-01-18 13:51:53,188 - DEBUG - After layer with stride 2: 8x56x56
+2025-01-18 13:51:53,188 - DEBUG - After layer with stride 1: 8x56x56
+2025-01-18 13:51:53,188 - DEBUG - After layer with stride 2: 4x28x28
+2025-01-18 13:51:53,188 - DEBUG - Initializing layers.
+2025-01-18 13:51:53,188 - DEBUG - Initialized eta_1 with shape: torch.Size([24])
+2025-01-18 13:51:53,189 - DEBUG - Initialized eta_2 with shape: torch.Size([32])
+2025-01-18 13:51:53,189 - DEBUG - Initialized eta_3 with shape: torch.Size([64])
+2025-01-18 13:51:53,189 - DEBUG - Initialized eta_4 with shape: torch.Size([96])
+2025-01-18 13:51:53,190 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 1
+2025-01-18 13:51:53,190 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 2
+2025-01-18 13:51:53,191 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 3
+2025-01-18 13:51:53,191 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 4
+2025-01-18 13:51:53,191 - DEBUG - Initializing weights for all layers.
+2025-01-18 13:51:55,478 - INFO - Total model parameters: 13.59M
+2025-01-18 13:51:55,631 - INFO - TensorBoard log directory: /usr/users/volterrakernel/lepretre_cle/volterra/models/Jan18_13-51-55_sh05
+2025-01-18 13:51:55,631 - INFO - Dataset: hmdb51, Root: ./data/HMDB51/videos, Output: ./data/HMDB51/preprocessed
+2025-01-18 13:51:55,632 - DEBUG - Checking preprocessing for hmdb51
+2025-01-18 13:51:56,704 - DEBUG - Preprocessing check passed
+2025-01-18 13:51:56,751 - INFO - Number of train videos: 4289
+2025-01-18 13:51:56,757 - INFO - Dataset: hmdb51, Root: ./data/HMDB51/videos, Output: ./data/HMDB51/preprocessed
+2025-01-18 13:51:56,757 - DEBUG - Checking preprocessing for hmdb51
+2025-01-18 13:51:57,017 - DEBUG - Preprocessing check passed
+2025-01-18 13:51:57,043 - INFO - Number of val videos: 1101
+2025-01-18 13:51:57,048 - INFO - Dataset: hmdb51, Root: ./data/HMDB51/videos, Output: ./data/HMDB51/preprocessed
+2025-01-18 13:51:57,049 - DEBUG - Checking preprocessing for hmdb51
+2025-01-18 13:51:57,344 - DEBUG - Preprocessing check passed
+2025-01-18 13:51:57,373 - INFO - Number of test videos: 1376
+2025-01-18 13:51:57,379 - INFO - Starting epoch 1/100
+2025-01-18 13:51:58,738 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:51:58,757 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:51:58,757 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:51:58,829 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:51:58,857 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:51:58,859 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:51:59,159 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:51:59,159 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:51:59,159 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:51:59,160 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:51:59,160 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:51:59,160 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:51:59,470 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:51:59,471 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:51:59,471 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:51:59,471 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:51:59,471 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:51:59,471 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:51:59,794 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:51:59,795 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:51:59,795 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:51:59,795 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:51:59,795 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:51:59,795 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:00,089 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:00,090 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:00,090 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:00,090 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:00,090 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:00,091 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:00,380 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:00,380 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:00,380 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:00,381 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:00,381 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:00,381 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:00,685 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:00,685 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:00,685 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:00,686 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:00,686 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:00,687 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:00,986 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:00,987 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:00,987 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:00,988 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:00,988 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:00,988 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:01,294 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:01,295 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:01,295 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:01,295 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:01,296 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:01,296 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:01,591 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:01,591 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:01,591 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:01,591 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:01,592 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:01,592 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:01,881 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:01,881 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:01,881 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:01,881 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:01,882 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:01,882 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:02,186 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:02,187 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:02,187 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:02,187 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:02,187 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:02,188 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:02,498 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:02,499 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:02,499 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:02,499 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:02,500 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:02,500 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:02,791 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:02,791 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:02,792 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:02,792 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:02,792 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:02,792 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:03,074 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:03,075 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:03,075 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:03,075 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:03,075 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:03,076 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:03,381 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:03,382 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:03,382 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:03,382 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:03,382 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:03,383 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:03,663 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:03,663 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:03,663 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:03,664 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:03,664 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:03,665 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:03,964 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:03,964 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:03,964 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:03,964 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:03,965 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:03,965 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:04,244 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:04,245 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:04,245 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:04,245 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:04,245 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:04,246 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:04,542 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:04,543 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:04,543 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:04,543 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:04,543 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:04,544 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:04,842 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:04,843 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:04,843 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:04,843 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:04,843 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:04,844 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:05,144 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:05,145 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:05,145 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:05,145 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:05,145 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:05,146 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:05,450 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:05,451 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:05,451 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:05,452 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:05,452 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:05,452 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:05,767 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:05,768 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:05,768 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:05,768 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:05,768 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:05,769 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:06,042 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:06,043 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:06,043 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:06,043 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:06,043 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:06,044 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:06,367 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:06,367 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:06,368 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:06,368 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:06,368 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:06,368 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:06,671 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:06,671 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:06,671 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:06,672 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:06,672 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:06,673 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:06,972 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:06,972 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:06,972 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:06,973 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:06,973 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:06,973 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:07,255 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:07,255 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:07,256 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:07,256 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:07,256 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:07,256 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:07,570 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:07,570 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:07,571 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:07,571 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:07,571 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:07,572 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:07,865 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:07,865 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:07,865 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:07,866 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:07,866 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:07,866 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:08,166 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:08,167 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:08,167 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:08,167 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:08,167 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:08,168 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:08,462 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:08,463 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:08,463 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:08,463 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:08,463 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:08,464 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:08,757 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:08,758 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:08,758 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:08,758 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:08,758 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:08,759 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:09,067 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:09,068 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:09,068 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:09,068 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:09,069 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:09,069 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:09,372 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:09,373 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:09,373 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:09,373 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:09,373 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:09,374 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:09,682 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:09,682 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:09,682 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:09,683 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:09,683 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:09,684 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:09,992 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:09,993 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:09,993 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:09,993 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:09,993 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:09,994 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:10,279 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:10,279 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:10,279 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:10,280 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:10,280 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:10,280 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:10,594 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:10,595 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:10,595 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:10,595 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:10,595 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:10,596 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:10,901 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:10,902 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:10,902 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:10,902 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:10,903 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:10,903 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:11,204 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:11,205 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:11,205 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:11,205 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:11,206 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:11,206 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:11,510 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:11,511 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:11,511 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:11,511 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:11,512 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:11,512 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:11,813 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:11,814 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:11,814 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:11,814 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:11,814 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:11,814 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:12,106 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:12,106 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:12,107 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:12,107 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:12,107 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:12,108 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:12,409 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:12,410 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:12,410 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:12,410 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:12,410 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:12,410 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:12,701 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:12,702 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:12,702 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:12,702 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:12,703 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:12,703 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:13,019 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:13,019 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:13,019 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:13,019 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:13,020 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:13,020 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:13,313 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:13,314 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:13,314 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:13,314 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:13,315 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:13,315 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:13,628 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:13,629 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:13,629 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:13,629 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:13,629 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:13,630 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:13,925 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:13,925 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:13,925 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:13,926 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:13,926 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:13,926 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:14,228 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:14,229 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:14,229 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:14,229 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:14,229 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:14,230 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:14,530 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:14,530 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:14,530 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:14,531 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:14,531 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:14,531 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:14,842 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:14,842 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:14,843 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:14,843 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:14,843 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:14,844 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:15,152 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:15,152 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:15,153 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:15,153 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:15,153 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:15,153 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:15,454 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:15,454 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:15,454 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:15,454 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:15,455 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:15,455 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:15,752 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:15,753 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:15,753 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:15,753 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:15,754 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:15,754 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:16,046 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:16,047 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:16,047 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:16,047 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:16,047 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:16,048 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:16,354 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:16,355 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:16,356 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:16,356 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:16,356 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:16,357 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:16,658 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:16,659 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:16,659 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:16,659 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:16,659 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:16,660 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:16,975 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:16,976 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:16,976 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:16,976 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:16,976 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:16,977 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:17,268 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:17,269 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:17,269 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:17,270 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:17,270 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:17,270 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:17,575 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:17,575 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:17,576 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:17,576 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:17,576 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:17,576 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:17,878 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:17,878 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:17,879 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:17,879 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:17,879 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:17,879 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:18,162 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:18,163 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:18,163 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:18,163 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:18,164 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:18,164 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:18,458 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:18,459 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:18,459 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:18,459 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:18,459 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:18,460 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:18,773 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:18,773 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:18,774 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:18,774 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:18,774 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:18,775 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:19,077 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:19,077 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:19,078 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:19,078 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:19,078 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:19,078 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:19,375 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:19,375 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:19,375 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:19,376 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:19,376 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:19,376 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:19,669 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:19,669 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:19,670 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:19,670 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:19,670 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:19,671 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:19,957 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:19,957 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:19,957 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:19,957 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:19,957 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:19,958 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:20,238 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:20,238 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:20,238 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:20,239 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:20,239 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:20,239 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:20,510 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:20,510 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:20,511 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:20,511 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:20,511 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:20,512 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:20,826 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:20,827 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:20,827 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:20,828 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:20,828 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:20,828 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:21,146 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:21,147 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:21,147 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:21,147 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:21,147 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:21,148 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:21,444 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:21,445 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:21,445 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:21,445 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:21,445 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:21,446 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:21,740 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:21,741 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:21,741 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:21,741 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:21,741 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:21,742 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:22,042 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:22,042 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:22,043 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:22,043 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:22,043 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:22,044 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:22,319 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:22,319 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:22,320 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:22,320 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:22,320 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:22,320 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:22,622 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:22,623 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:22,623 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:22,623 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:22,623 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:22,624 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:22,924 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:22,925 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:22,925 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:22,925 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:22,925 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:22,926 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:23,245 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:23,246 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:23,246 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:23,246 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:23,246 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:23,246 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:23,537 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:23,537 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:23,538 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:23,538 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:23,538 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:23,539 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:23,857 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:23,857 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:23,857 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:23,858 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:23,858 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:23,859 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:24,140 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:24,141 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:24,141 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:24,141 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:24,142 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:24,142 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:24,429 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:24,430 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:24,430 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:24,430 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:24,430 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:24,430 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:24,733 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:24,733 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:24,734 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:24,734 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:24,734 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:24,735 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:25,031 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:25,032 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:25,032 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:25,032 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:25,033 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:25,033 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:25,324 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:25,324 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:25,325 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:25,325 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:25,325 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:25,326 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:25,608 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:25,609 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:25,609 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:25,609 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:25,610 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:25,610 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:25,907 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:25,908 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:25,908 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:25,908 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:25,908 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:25,909 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:26,237 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:26,237 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:26,238 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:26,238 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:26,238 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:26,239 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:26,546 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:26,547 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:26,547 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:26,547 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:26,548 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:26,548 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:26,854 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:26,854 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:26,854 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:26,855 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:26,855 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:26,856 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:27,140 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:27,141 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:27,141 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:27,141 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:27,141 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:27,142 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:27,454 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:27,455 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:27,455 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:27,455 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:27,455 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:27,456 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:27,765 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:27,765 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:27,766 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:27,766 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:27,766 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:27,767 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:28,058 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:28,059 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:28,059 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:28,059 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:28,059 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:28,060 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:28,342 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:28,342 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:28,343 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:28,343 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:28,343 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:28,344 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:28,651 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:28,651 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:28,651 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:28,652 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:28,652 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:28,653 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:28,945 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:28,946 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:28,946 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:28,946 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:28,947 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:28,947 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:29,253 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:29,254 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:29,254 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:29,255 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:29,255 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:29,255 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:29,552 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:29,553 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:29,553 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:29,553 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:29,554 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:29,554 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:29,856 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:29,857 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:29,857 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:29,857 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:29,858 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:29,858 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:30,154 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:30,155 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:30,155 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:30,155 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:30,155 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:30,156 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:30,436 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:30,436 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:30,437 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:30,437 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:30,437 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:30,437 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:30,733 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:30,733 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:30,733 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:30,734 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:30,734 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:30,734 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:31,031 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:31,032 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:31,032 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:31,033 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:31,033 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:31,033 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:31,333 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:31,334 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:31,334 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:31,334 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:31,335 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:31,335 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:31,651 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:31,651 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:31,651 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:31,652 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:31,652 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:31,652 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:31,945 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:31,945 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:31,945 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:31,946 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:31,946 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:31,946 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:32,253 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:32,253 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:32,253 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:32,254 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:32,254 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:32,254 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:32,554 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:32,555 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:32,555 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:32,555 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:32,555 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:32,556 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:32,848 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:32,849 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:32,849 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:32,849 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:32,849 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:32,850 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:33,150 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:33,150 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:33,150 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:33,151 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:33,151 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:33,151 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:33,459 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:33,459 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:33,460 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:33,460 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:33,460 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:33,461 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:33,756 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:33,757 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:33,757 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:33,757 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:33,758 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:33,758 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:34,043 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:34,044 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:34,044 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:34,044 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:34,045 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:34,045 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:34,366 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:34,367 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:34,367 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:34,367 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:34,367 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:34,368 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:34,672 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:34,673 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:34,673 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:34,673 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:34,673 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:34,674 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:34,975 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:34,975 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:34,975 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:34,976 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:34,976 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:34,976 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:35,272 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:35,273 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:35,273 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:35,273 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:35,273 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:35,274 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:35,576 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:35,576 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:35,576 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:35,577 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:35,577 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:35,577 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:35,864 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:35,864 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:35,864 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:35,864 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:35,865 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:35,865 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:36,143 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:36,144 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:36,144 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:36,144 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:36,145 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:36,145 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:36,428 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:36,429 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:36,429 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:36,429 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:36,430 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:36,430 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:36,735 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:36,735 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:36,736 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:36,736 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:36,736 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:36,737 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:37,029 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:37,029 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:37,030 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:37,030 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:37,030 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:37,030 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:37,325 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:37,325 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:37,325 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:37,326 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:37,326 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:37,326 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:37,617 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:37,618 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:37,618 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:37,618 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:37,619 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:37,619 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:37,912 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:37,912 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:37,913 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:37,913 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:37,913 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:37,914 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:38,225 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:38,225 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:38,225 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:38,226 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:38,226 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:38,226 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:38,515 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:38,516 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:38,516 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:38,517 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:38,517 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:38,517 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:38,802 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:38,803 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:38,803 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:38,803 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:38,803 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:38,804 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:39,092 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:39,093 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:39,093 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:39,093 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:39,093 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:39,094 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)
+2025-01-18 13:52:39,409 - DEBUG - Starting forward pass with input shape: torch.Size([8, 3, 16, 112, 112])
+2025-01-18 13:52:39,409 - DEBUG - Input x shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:39,409 - DEBUG - Input y shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 13:52:39,409 - DEBUG - Computed polynomial kernel.
+2025-01-18 13:52:39,410 - DEBUG - Kernel shape: torch.Size([8, 8])
+2025-01-18 13:52:39,410 - ERROR - Error processing batch in train phase: mat1 and mat2 shapes cannot be multiplied (1161216x112 and 8x8)

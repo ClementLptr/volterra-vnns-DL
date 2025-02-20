@@ -1,0 +1,431 @@
+2025-01-18 22:21:27,671 - INFO - Logging initialized. Log file: /usr/users/volterrakernel/lepretre_cle/volterra/logs/v2/RKHS-v2-test-run-2025-01-18-22-21-27.log
+2025-01-18 22:21:27,671 - INFO - Model version: v2
+2025-01-18 22:21:27,744 - INFO - Using device: cuda:0
+2025-01-18 22:21:27,744 - DEBUG - Initializing architecture configuration.
+2025-01-18 22:21:27,745 - DEBUG - Calculating feature dimensions dynamically.
+2025-01-18 22:21:27,745 - DEBUG - Initial input dimensions: 16x112x112
+2025-01-18 22:21:27,745 - DEBUG - After layer with stride 1: 16x112x112
+2025-01-18 22:21:27,745 - DEBUG - After layer with stride 2: 8x56x56
+2025-01-18 22:21:27,745 - DEBUG - After layer with stride 1: 8x56x56
+2025-01-18 22:21:27,745 - DEBUG - After layer with stride 2: 4x28x28
+2025-01-18 22:21:27,745 - DEBUG - Initializing layers.
+2025-01-18 22:21:28,256 - DEBUG - Initialized eta_1 with shape: torch.Size([3, 27, 27, 16, 112, 112])
+2025-01-18 22:21:28,728 - DEBUG - Initialized eta_2 with shape: torch.Size([3, 27, 27, 16, 112, 112])
+2025-01-18 22:21:29,201 - DEBUG - Initialized eta_3 with shape: torch.Size([3, 27, 27, 16, 112, 112])
+2025-01-18 22:21:29,672 - DEBUG - Initialized eta_4 with shape: torch.Size([3, 27, 27, 16, 112, 112])
+2025-01-18 22:21:29,673 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 1
+2025-01-18 22:21:29,673 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 2
+2025-01-18 22:21:29,673 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 3
+2025-01-18 22:21:29,673 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 4
+2025-01-18 22:21:29,673 - DEBUG - Initializing weights for all layers.
+2025-01-18 22:21:29,673 - DEBUG - Initializing architecture configuration.
+2025-01-18 22:21:29,673 - DEBUG - Calculating feature dimensions dynamically.
+2025-01-18 22:21:29,673 - DEBUG - Initial input dimensions: 16x112x112
+2025-01-18 22:21:29,673 - DEBUG - After layer with stride 1: 16x112x112
+2025-01-18 22:21:29,673 - DEBUG - After layer with stride 2: 8x56x56
+2025-01-18 22:21:29,673 - DEBUG - After layer with stride 1: 8x56x56
+2025-01-18 22:21:29,673 - DEBUG - After layer with stride 2: 4x28x28
+2025-01-18 22:21:29,673 - DEBUG - Initializing layers.
+2025-01-18 22:21:30,007 - DEBUG - Initialized eta_1 with shape: torch.Size([2, 27, 27, 16, 112, 112])
+2025-01-18 22:21:30,386 - DEBUG - Initialized eta_2 with shape: torch.Size([2, 27, 27, 16, 112, 112])
+2025-01-18 22:21:30,732 - DEBUG - Initialized eta_3 with shape: torch.Size([2, 27, 27, 16, 112, 112])
+2025-01-18 22:21:31,135 - DEBUG - Initialized eta_4 with shape: torch.Size([2, 27, 27, 16, 112, 112])
+2025-01-18 22:21:31,135 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 1
+2025-01-18 22:21:31,135 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 2
+2025-01-18 22:21:31,135 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 3
+2025-01-18 22:21:31,137 - DEBUG - Initialized BatchNorm3d and Dropout3d for layer 4
+2025-01-18 22:21:31,137 - DEBUG - Initializing weights for all layers.
+2025-01-18 22:21:33,228 - INFO - Total model parameters: 2939.85M
+2025-01-18 22:21:35,397 - INFO - TensorBoard log directory: /usr/users/volterrakernel/lepretre_cle/volterra/models/Jan18_22-21-35_sh03
+2025-01-18 22:21:35,397 - INFO - Dataset: hmdb51, Root: ./data/HMDB51/videos, Output: ./data/HMDB51/preprocessed
+2025-01-18 22:21:35,398 - DEBUG - Checking preprocessing for hmdb51
+2025-01-18 22:21:36,313 - DEBUG - Preprocessing check passed
+2025-01-18 22:21:36,368 - INFO - Number of train videos: 4289
+2025-01-18 22:21:36,374 - INFO - Dataset: hmdb51, Root: ./data/HMDB51/videos, Output: ./data/HMDB51/preprocessed
+2025-01-18 22:21:36,375 - DEBUG - Checking preprocessing for hmdb51
+2025-01-18 22:21:36,622 - DEBUG - Preprocessing check passed
+2025-01-18 22:21:36,646 - INFO - Number of val videos: 1101
+2025-01-18 22:21:36,652 - INFO - Dataset: hmdb51, Root: ./data/HMDB51/videos, Output: ./data/HMDB51/preprocessed
+2025-01-18 22:21:36,652 - DEBUG - Checking preprocessing for hmdb51
+2025-01-18 22:21:36,935 - DEBUG - Preprocessing check passed
+2025-01-18 22:21:36,962 - INFO - Number of test videos: 1376
+2025-01-18 22:21:36,968 - INFO - Starting epoch 1/100
+2025-01-18 22:21:38,230 - DEBUG - Starting forward pass.
+2025-01-18 22:21:38,247 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:38,249 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:38,249 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:38,594 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:38,883 - DEBUG - Starting forward pass.
+2025-01-18 22:21:38,884 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:38,884 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:38,884 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:39,208 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:39,511 - DEBUG - Starting forward pass.
+2025-01-18 22:21:39,511 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:39,512 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:39,512 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:39,839 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:40,150 - DEBUG - Starting forward pass.
+2025-01-18 22:21:40,151 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:40,151 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:40,151 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:40,477 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:40,765 - DEBUG - Starting forward pass.
+2025-01-18 22:21:40,765 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:40,765 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:40,766 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:41,089 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:41,376 - DEBUG - Starting forward pass.
+2025-01-18 22:21:41,377 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:41,377 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:41,377 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:41,701 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:42,009 - DEBUG - Starting forward pass.
+2025-01-18 22:21:42,009 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:42,009 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:42,009 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:42,332 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:42,645 - DEBUG - Starting forward pass.
+2025-01-18 22:21:42,646 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:42,646 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:42,646 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:42,967 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:43,286 - DEBUG - Starting forward pass.
+2025-01-18 22:21:43,286 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:43,286 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:43,286 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:43,616 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:43,942 - DEBUG - Starting forward pass.
+2025-01-18 22:21:43,942 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:43,942 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:43,943 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:44,269 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:44,571 - DEBUG - Starting forward pass.
+2025-01-18 22:21:44,572 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:44,572 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:44,572 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:44,892 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:45,199 - DEBUG - Starting forward pass.
+2025-01-18 22:21:45,199 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:45,199 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:45,200 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:45,525 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:45,823 - DEBUG - Starting forward pass.
+2025-01-18 22:21:45,824 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:45,824 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:45,824 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:46,151 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:46,463 - DEBUG - Starting forward pass.
+2025-01-18 22:21:46,464 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:46,464 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:46,464 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:46,793 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:47,120 - DEBUG - Starting forward pass.
+2025-01-18 22:21:47,121 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:47,121 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:47,121 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:47,433 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:47,731 - DEBUG - Starting forward pass.
+2025-01-18 22:21:47,731 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:47,731 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:47,731 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:48,056 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:48,370 - DEBUG - Starting forward pass.
+2025-01-18 22:21:48,371 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:48,371 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:48,371 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:48,701 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:49,020 - DEBUG - Starting forward pass.
+2025-01-18 22:21:49,020 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:49,021 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:49,021 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:49,348 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:49,665 - DEBUG - Starting forward pass.
+2025-01-18 22:21:49,665 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:49,666 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:49,666 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:49,989 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:50,246 - DEBUG - Starting forward pass.
+2025-01-18 22:21:50,246 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:50,247 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:50,247 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:50,573 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:50,867 - DEBUG - Starting forward pass.
+2025-01-18 22:21:50,868 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:50,868 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:50,868 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:51,191 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:51,470 - DEBUG - Starting forward pass.
+2025-01-18 22:21:51,470 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:51,470 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:51,470 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:51,793 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:52,096 - DEBUG - Starting forward pass.
+2025-01-18 22:21:52,097 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:52,097 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:52,097 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:52,428 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:52,722 - DEBUG - Starting forward pass.
+2025-01-18 22:21:52,723 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:52,723 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:52,723 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:53,053 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:53,375 - DEBUG - Starting forward pass.
+2025-01-18 22:21:53,376 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:53,376 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:53,376 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:53,705 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:53,997 - DEBUG - Starting forward pass.
+2025-01-18 22:21:53,997 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:53,997 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:53,997 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:54,326 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:54,624 - DEBUG - Starting forward pass.
+2025-01-18 22:21:54,624 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:54,624 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:54,624 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:54,947 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:55,225 - DEBUG - Starting forward pass.
+2025-01-18 22:21:55,225 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:55,225 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:55,226 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:55,539 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:55,824 - DEBUG - Starting forward pass.
+2025-01-18 22:21:55,824 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:55,825 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:55,825 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:56,132 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:56,434 - DEBUG - Starting forward pass.
+2025-01-18 22:21:56,435 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:56,435 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:56,435 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:56,768 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:57,038 - DEBUG - Starting forward pass.
+2025-01-18 22:21:57,039 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:57,039 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:57,039 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:57,369 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:57,654 - DEBUG - Starting forward pass.
+2025-01-18 22:21:57,654 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:57,654 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:57,654 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:57,977 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:58,275 - DEBUG - Starting forward pass.
+2025-01-18 22:21:58,275 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:58,276 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:58,276 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:58,604 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:58,897 - DEBUG - Starting forward pass.
+2025-01-18 22:21:58,898 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:58,898 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:58,898 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:59,228 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:21:59,515 - DEBUG - Starting forward pass.
+2025-01-18 22:21:59,515 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:21:59,516 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:59,516 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:21:59,850 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:00,116 - DEBUG - Starting forward pass.
+2025-01-18 22:22:00,116 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:00,116 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:00,116 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:00,448 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:00,747 - DEBUG - Starting forward pass.
+2025-01-18 22:22:00,748 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:00,748 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:00,748 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:01,075 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:01,346 - DEBUG - Starting forward pass.
+2025-01-18 22:22:01,346 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:01,346 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:01,347 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:01,660 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:01,983 - DEBUG - Starting forward pass.
+2025-01-18 22:22:01,983 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:01,983 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:01,983 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:02,310 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:02,613 - DEBUG - Starting forward pass.
+2025-01-18 22:22:02,613 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:02,614 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:02,614 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:02,935 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:03,263 - DEBUG - Starting forward pass.
+2025-01-18 22:22:03,264 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:03,264 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:03,264 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:03,594 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:03,857 - DEBUG - Starting forward pass.
+2025-01-18 22:22:03,858 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:03,858 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:03,858 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:04,188 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:04,500 - DEBUG - Starting forward pass.
+2025-01-18 22:22:04,501 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:04,501 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:04,501 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:04,830 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:05,132 - DEBUG - Starting forward pass.
+2025-01-18 22:22:05,133 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:05,133 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:05,133 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:05,457 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:05,751 - DEBUG - Starting forward pass.
+2025-01-18 22:22:05,752 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:05,752 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:05,752 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:06,083 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:06,395 - DEBUG - Starting forward pass.
+2025-01-18 22:22:06,396 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:06,396 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:06,396 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:06,722 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:07,014 - DEBUG - Starting forward pass.
+2025-01-18 22:22:07,014 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:07,014 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:07,014 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:07,328 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:07,599 - DEBUG - Starting forward pass.
+2025-01-18 22:22:07,599 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:07,600 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:07,600 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:07,932 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:08,222 - DEBUG - Starting forward pass.
+2025-01-18 22:22:08,222 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:08,223 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:08,223 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:08,544 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:08,835 - DEBUG - Starting forward pass.
+2025-01-18 22:22:08,835 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:08,835 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:08,835 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:09,159 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:09,470 - DEBUG - Starting forward pass.
+2025-01-18 22:22:09,471 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:09,471 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:09,471 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:09,799 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:10,082 - DEBUG - Starting forward pass.
+2025-01-18 22:22:10,083 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:10,083 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:10,083 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:10,400 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:10,675 - DEBUG - Starting forward pass.
+2025-01-18 22:22:10,676 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:10,676 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:10,676 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:11,002 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:11,284 - DEBUG - Starting forward pass.
+2025-01-18 22:22:11,285 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:11,285 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:11,285 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:11,615 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:11,925 - DEBUG - Starting forward pass.
+2025-01-18 22:22:11,926 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:11,926 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:11,926 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:12,256 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:12,540 - DEBUG - Starting forward pass.
+2025-01-18 22:22:12,541 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:12,541 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:12,541 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:12,870 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:13,156 - DEBUG - Starting forward pass.
+2025-01-18 22:22:13,157 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:13,157 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:13,157 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:13,480 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:13,763 - DEBUG - Starting forward pass.
+2025-01-18 22:22:13,764 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:13,764 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:13,764 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:14,094 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:14,396 - DEBUG - Starting forward pass.
+2025-01-18 22:22:14,396 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:14,397 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:14,397 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:14,729 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:15,039 - DEBUG - Starting forward pass.
+2025-01-18 22:22:15,039 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:15,039 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:15,039 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:15,362 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:15,675 - DEBUG - Starting forward pass.
+2025-01-18 22:22:15,675 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:15,675 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:15,676 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:16,004 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:16,306 - DEBUG - Starting forward pass.
+2025-01-18 22:22:16,306 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:16,307 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:16,307 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:16,637 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:16,957 - DEBUG - Starting forward pass.
+2025-01-18 22:22:16,957 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:16,957 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:16,958 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:17,288 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:17,548 - DEBUG - Starting forward pass.
+2025-01-18 22:22:17,549 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:17,549 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:17,549 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:17,880 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:18,180 - DEBUG - Starting forward pass.
+2025-01-18 22:22:18,181 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:18,181 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:18,181 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:18,504 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:18,783 - DEBUG - Starting forward pass.
+2025-01-18 22:22:18,784 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:18,784 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:18,784 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:19,110 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:19,435 - DEBUG - Starting forward pass.
+2025-01-18 22:22:19,435 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:19,435 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:19,436 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:19,764 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:20,046 - DEBUG - Starting forward pass.
+2025-01-18 22:22:20,046 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:20,046 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:20,047 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:20,379 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:20,692 - DEBUG - Starting forward pass.
+2025-01-18 22:22:20,692 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:20,692 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:20,692 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:21,023 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:21,314 - DEBUG - Starting forward pass.
+2025-01-18 22:22:21,315 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:21,315 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:21,315 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:21,645 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:21,969 - DEBUG - Starting forward pass.
+2025-01-18 22:22:21,970 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:21,970 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:21,970 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:22,297 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:22,601 - DEBUG - Starting forward pass.
+2025-01-18 22:22:22,601 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:22,602 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:22,602 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:22,930 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:23,247 - DEBUG - Starting forward pass.
+2025-01-18 22:22:23,247 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:23,248 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:23,248 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:23,562 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:23,849 - DEBUG - Starting forward pass.
+2025-01-18 22:22:23,850 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:23,850 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:23,850 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:24,160 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:24,486 - DEBUG - Starting forward pass.
+2025-01-18 22:22:24,487 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:24,487 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:24,487 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:24,807 - ERROR - Error processing batch in train phase: CUDA out of memory. Tried to allocate 13.08 GiB. GPU 0 has a total capacity of 23.68 GiB of which 11.88 GiB is free. Including non-PyTorch memory, this process has 11.79 GiB memory in use. Of the allocated memory 11.47 GiB is allocated by PyTorch, and 40.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-18 22:22:25,115 - DEBUG - Starting forward pass.
+2025-01-18 22:22:25,116 - DEBUG - Padded input tensor shape: torch.Size([8, 3, 18, 114, 114])
+2025-01-18 22:22:25,116 - DEBUG - Extracted patches shape: torch.Size([8, 3, 27, 16, 112, 112])
+2025-01-18 22:22:25,116 - DEBUG - Extracted patches for Volterra approximation, shape: torch.Size([8, 3, 27, 16, 112, 112])
